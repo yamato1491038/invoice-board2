@@ -1,0 +1,45 @@
+.Work{
+
+  &__title{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 50px;
+  }
+
+  &__form{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  &__show{
+
+    text-align: center;
+    margin-top: 50px;
+    &__contents{
+
+      font-size: 20px;
+      margin-top: 10px;
+
+      &__qty{
+
+
+      }
+    }
+  }
+}
+
+.WorkCreate{
+
+  &__title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  &__btn{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}

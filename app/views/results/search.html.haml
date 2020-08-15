@@ -1,0 +1,12 @@
+.Search
+  .Search__title
+    検索結果
+  .Search__display
+    - if @results.present?
+      = "#{@results[0].user.name}さんの請求額は"
+      %span.Search__display__bill #{@bill}
+      %span 円です
+    - else
+      = "請求額はありません"
+  .Search__btn
+    = link_to "戻る","/results", class: 'Button--logout'

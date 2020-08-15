@@ -1,0 +1,18 @@
+.Register
+  .Register__form
+    = form_with model: @result, local: true do |f|
+      = f.label "契約種類" 
+      = f.collection_select(:work_id, Work.all, :id, :name, {prompt: true}, {class:"Register__form__box"})
+
+      = f.label "件数" 
+      = f.number_field :qty, min: 0,class:"Register__form__box"
+
+      = f.submit '登録', class: 'Button--login'
+
+  .Register__show
+    - @results.each do |result|
+      .Register__show__contents
+        .Register__show__contents__qty
+          = "#{result.work.name}   #{result.qty}件     #{result.created_at.strftime('%Y/%m/%d')}"
+        .Register__show__contents__derete
+          = link_to '削除', "/results/#{result.id}", method: :delete, class:"Button"

@@ -1,0 +1,60 @@
+.AccountPage{
+
+  &__title{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  &__sign{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+    text-decoration: none;
+  }
+
+  &__form{
+
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.FormField{
+
+  &__label--normal{
+
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+.actions{
+
+  margin-top: 30px;
+}
+
+.Button--user{
+
+  background-color:skyblue;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.Button--input{
+
+  padding: 5px;
+}
+
+.Button--login{
+  
+  background-color:darkcyan;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 70px;
+}

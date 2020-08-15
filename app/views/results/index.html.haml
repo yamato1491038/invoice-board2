@@ -1,0 +1,13 @@
+.Main
+  .Main__title
+    業務選択
+  .Main__selects
+    .Main__selects__check
+      = link_to "登録", '/results/new', class: 'Button--main'
+    .Main__selects__check
+      = link_to "確認(管理者のみ）", '/results/:id', class: 'Button--main'
+    .Main__selects__check
+      = link_to "業務登録（管理者のみ）", '/works/new', class: 'Button--main'
+
+  .Main__logout
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button--logout'

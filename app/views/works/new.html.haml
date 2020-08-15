@@ -1,0 +1,20 @@
+.Work
+  .Work__title
+    業務内容登録
+  .Work__form
+    = form_with model: @work , local: true do |f|
+      = f.label "契約名称"
+      = f.text_field :name
+
+      = f.label "契約単価"
+      = f.number_field :price
+
+      = f.submit "登録",class: "Button--login"
+
+  .Work__show
+    - @works.each do |work|
+      .Work__show__contents
+        .Work__show__contents__qty
+          = "#{work.name}   #{work.price}円"
+        -# .Work__show__contents__derete
+          -# = link_to '削除', "/works/#{work.id}", method: :delete
